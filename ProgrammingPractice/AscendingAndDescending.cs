@@ -8,6 +8,30 @@ namespace ProgrammingPractice
 {
     public class AscendingAndDescending
     {
+        public static void sortingUsingTupleSortString()
+        {
+            string[] arr = { "Orange", "fig", "guava", "banana", "apple" };
+            for(int i = 0;i<arr.Length;i++){
+                for(int j = i+1;j<arr.Length;j++){
+                    if(arr[i].Length>arr[j].Length){
+                        (arr[i],arr[j]) = (arr[j],arr[i]);
+                    }
+                }
+            }
+            Console.WriteLine(String.Join(", ",arr));
+        }
+         public static void sortingUsingTupleSortInt()
+        {
+            int[] arr = { 3, 56, 77, 42, 998, 345, 652, 12 };
+             for(int i = 0;i<arr.Length;i++){
+                 for(int j = i+1;j<arr.Length;j++){
+                     if(arr[i]<arr[j]){
+                         (arr[i],arr[j]) = (arr[j],arr[i]);
+                     }
+                 }
+             }
+             Console.WriteLine(String.Join(", ",arr));
+         }
         public static void AscedingAndDescendingInArray()
         {
             int[] arr = { 3, 56, 77, 42, 998, 345, 652, 12 };
