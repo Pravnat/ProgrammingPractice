@@ -233,26 +233,19 @@ namespace ProgrammingPractice
         public static void SortStringOfArray()
         {
             string[] arr = { "fig", "kiwi", "apple", "watermelon", "banana" };
-            string temp;
-            foreach(string str in arr)
-            {
-                for(int i = 0; i < arr.Length; i++)
+            for(int i = 0; i < arr.Length; i++)
                 {
                     for(int j = i + 1;j < arr.Length; j++)
                     {
                         if (arr[i].CompareTo(arr[j])> 0) 
                         {
-                            temp = arr[i];
-                            arr[i] = arr[j];
-                            arr[j] = temp;
+                            (arr[i],arr[j]) =(arr[j],arr[i]);
                         }
                     }
                 }
-            }
-            foreach(string str in arr)
-            {
-                Console.Write(str + " ");
-            }
+        
+            
+                Console.WriteLine(String.Join(",",arr));
         }
         /*public static void Main(string[] args)
         {
