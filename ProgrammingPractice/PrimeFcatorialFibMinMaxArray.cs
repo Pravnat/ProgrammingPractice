@@ -23,6 +23,29 @@ namespace ProgrammingPractice
             if (isprime) { Console.WriteLine($"{b} is a Prime"); }
             else { Console.WriteLine($"{b} is not a Prime"); }
         }
+        public class PrimeFcatorialFibMinMaxArray
+        {
+            Console.WriteLine("Prime numbers from 1 to 30:");
+        
+        for (int i = 2; i <= 30; i++)
+        {
+            bool isPrime = true;
+
+            for (int j = 2; j < i; j++)
+            {
+                if (i % j == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime)
+            {
+                Console.Write(i + " ");
+            }
+        }
+        }
          public static void Squencenumber()
         {
             string input = "aaabbcccaaa";
