@@ -23,7 +23,7 @@ namespace ProgrammingPractice
             if (isprime) { Console.WriteLine($"{b} is a Prime"); }
             else { Console.WriteLine($"{b} is not a Prime"); }
         }
-        public class PrimeFcatorialFibMinMaxArray
+        public static void rangeNumisPrime()
         {
             Console.WriteLine("Prime numbers from 1 to 30:");
         
