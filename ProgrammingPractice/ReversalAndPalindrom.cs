@@ -143,7 +143,6 @@ namespace ProgrammingPractice
             //ReversaLofInt();
             //ReversalOdIntintArray();
             PalindromofIntArray();
-        add
         }*/
         
     }
